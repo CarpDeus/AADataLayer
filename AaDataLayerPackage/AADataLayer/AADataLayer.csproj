@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net80;net48</TargetFrameworks>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Title>AzureArchitect Data Access Layer</Title>
+    <Authors>Josef Finsel</Authors>
+    <Company>Azure-Architect.com</Company>
+    <Description>A generic data access layer to allow for  easily transition from .net frameworks</Description>
+    <Copyright>2024</Copyright>
+    <PackageProjectUrl>https://github.com/CarpDeus/AADataLayer</PackageProjectUrl>
+    
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Documentation\" />
+  </ItemGroup>
+
+</Project>
