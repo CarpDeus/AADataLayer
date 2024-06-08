@@ -1,0 +1,48 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+	  <TargetFrameworks>net80;net48</TargetFrameworks>
+	  <ImplicitUsings>disable</ImplicitUsings>
+	  <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+	  <Title>Azure-Architect.com Packge for Data Access Layer</Title>
+	  <Authors>Josef Finsel</Authors>
+	  <Company>azure-architect.com</Company>
+	  <Product>AaTools.AaDataLayer</Product>
+	  <AssemblyName>AaDataLayer</AssemblyName>
+	  <ApplicationIcon></ApplicationIcon>
+	  <Description>An nuget package for implementing a Generic SQL Server Data Access Layer. Written for updating my projects from .NET 4.8 to .NET 8.0 with minimal fuss.</Description>
+	  <Copyright>Copyright 2024, all rights reserved</Copyright>
+	  <PackageIcon></PackageIcon>
+	  <PackageReadmeFile>README.md</PackageReadmeFile>
+	  <RepositoryUrl>https://github.com/CarpDeus/AADataLayer</RepositoryUrl>
+	  <PackageTags>Data Access</PackageTags>
+	  <RepositoryType>git</RepositoryType>
+	  <Version>1.0.0</Version>
+	  <GenerateDocumentationFile>True</GenerateDocumentationFile>
+	  <PackageProjectUrl>https://github.com/CarpDeus/AADataLayer</PackageProjectUrl>
+	  <PackageReleaseNotes></PackageReleaseNotes>
+	  <PackageLicenseFile>LICENSE</PackageLicenseFile>
+	  <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\..\AALogging.gh\LICENSE">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AaLogging" Version="1.0.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Documentation\V1\" />
+  </ItemGroup>
+
+</Project>
